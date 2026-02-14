@@ -118,6 +118,21 @@ main > section {
 #quick-list {
   font-weight: 500;
 }
+#experiance-bedge{
+  padding: 45px 42px;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#experiance-year{
+  font-size: 4rem;
+  font-weight: 700;
+  
+}
+#experiance-year-medium{
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
 /* features section related style */
 #features-section-titlee {
   border-left: 5px solid #ff900e;
@@ -167,10 +182,15 @@ main > section {
 .sponsor-company img {
   filter: grayscale(100%);
 }
+.featured-architect{
+  width: 100%;
+
+}
 /* responsive media query  */
 @media screen and (max-width: 576px) {
   .nav-bar,
   .nav-link,
+  .features,
   .teams {
     flex-direction: column;
   }
@@ -191,11 +211,15 @@ main > section {
     justify-items: center;
     gap: 50px;
   }
+  #experiance-bedge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 
 /* meduimu size design */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams .features{
     flex-direction: column;
   }
   .our-features {
@@ -205,5 +229,9 @@ main > section {
   .facts-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
+  }
+  #experiance-bedge{
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
